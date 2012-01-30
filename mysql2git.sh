@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #
-# The idea is to dump each MySQL database on localhost in its own file and
-# store it into a Git repo.  This script doesn't take care of the later.
+# Dump schema and data of each table in selected or all databases of a MySQL
+# host into a Git repo.
 #
 # It's recommended to set username and password in ~/.my.cnf:
 #
