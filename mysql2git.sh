@@ -27,6 +27,7 @@ mysql2git_main() {
       p) MYSQLARGS="$MYSQLARGS -p$OPTARG";;
       h) MYSQLARGS="$MYSQLARGS -h $OPTARG";;
       m) GITCIMSG="$OPTARG";;
+      ?) mysql2git_usage;;
     esac
   done
   shift $(( OPTIND-1 ))
