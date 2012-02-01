@@ -1,19 +1,8 @@
 #!/bin/bash
 
-#
-# Dump schema and data of each table in selected or all databases of a MySQL
-# host into a Git repo.
-#
-# It's recommended to set username and password in ~/.my.cnf:
-#
-# [client]
-# user=root
-# password=set_password_here
-#
-# See:
-# http://www.viget.com/extend/backup-your-database-in-git/
-# http://www.linuxjournal.com/node/1001956
-#
+# mysql2git
+# by Remi Plourde
+# http://github.com/remino/mysql2git
 
 mysql2git_main() {
   [ $# -lt 1 ] && mysql2git_usage
